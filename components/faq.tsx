@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -71,7 +73,7 @@ const faqs = [
   },
 ];
 
-const FAQItem = ({ faq, isOpen, onToggle }) => {
+const FAQItem = ({ faq, isOpen, onToggle }: any) => {
   const Icon = faq.icon;
 
   return (
@@ -133,7 +135,7 @@ const FAQItem = ({ faq, isOpen, onToggle }) => {
 export default function VercelFAQ() {
   const [openId, setOpenId] = useState(null);
 
-  const toggleFAQ = (id) => {
+  const toggleFAQ = (id: any) => {
     setOpenId(openId === id ? null : id);
   };
 
@@ -173,8 +175,8 @@ export default function VercelFAQ() {
                 Frequently Asked Questions
               </h1>
               <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto">
-                Everything you need to know about deploying with Vercel. Can't
-                find what you're looking for?{" "}
+                Everything you need to know about deploying with Vercel.
+                Can&apos;t find what you&apos;re looking for?{" "}
                 <a
                   href="#"
                   className="text-white hover:text-zinc-300 underline underline-offset-4 transition-colors"
