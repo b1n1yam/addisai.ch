@@ -14,7 +14,7 @@ const testimonials = [
     id: 2,
     text: "They truly grasped the essence of our brand and developed a marketing plan that was spot on. Their identity perfectly captured our innovative vision, and the creative approach to sales helped us secure a key partnership with a major company.",
     author: "Ethan Miller",
-    company: "Nova Software",
+    company: "Addis AI",
     position: "Marketing Director",
   },
   {
